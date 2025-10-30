@@ -8,7 +8,7 @@ const Projects = () => (
       <a href="/TCC2 - Caroline Bernich.pdf" target="_blank" rel="noopener noreferrer" >
         <div className="project-card">
         
-          <img src="/museuTcc.png" alt="Museu de Anatomia" />
+          <img src={process.env.PUBLIC_URL +"/museuTcc.png"} alt="Museu de Anatomia" />
           <h3>Museu de Anatomia (TCC)</h3>
           <p>Aplicação de Realidade Aumentada para ensino de Anatomia Humana, com modelos 3D interativos.</p>
         </div>
@@ -17,7 +17,7 @@ const Projects = () => (
      
         <a href="https://simulahealth.com.br/" target="_blank" rel="noopener noreferrer" >
           <div className="project-card">
-            <img src="/simula.png" alt="Simula Health" />
+            <img src={process.env.PUBLIC_URL +"/simula.png"} alt="Simula Health" />
             <h3>Simula Health</h3>
             <p>Simulações 3D e em realidade virtual para ensino de enfermagem, com foco em interatividade.</p>
           </div>
@@ -25,7 +25,7 @@ const Projects = () => (
 
       <a href="https://www.safra.com/" target="_blank" rel="noopener noreferrer" >
         <div className="project-card" >
-          <img src="/banco-safra.png" alt="Digital Business / Banco Safra NY" />
+          <img src={process.env.PUBLIC_URL +"/banco-safra.png"} alt="Digital Business / Banco Safra NY" />
           <h3>Digital Business / Banco Safra NY</h3>
           <p>Reformulação de site institucional durante estágio, contribuindo com melhorias visuais e front-end.</p>
         </div>
@@ -33,7 +33,7 @@ const Projects = () => (
 
       <a href="https://biocodejr.com.br/" target="_blank" rel="noopener noreferrer"  >
         <div className="project-card">
-          <img src="/logo-biocodejr.svg" alt="Biocode jr" id="biocode" />
+          <img src={process.env.PUBLIC_URL +"/logo-biocodejr.svg"} alt="Biocode jr" id="biocode" />
           <h3>BioCode jr</h3>
           <p>Contrução de site da empresa júnior de Informática Biomédica da UFCSPA</p>
         </div>

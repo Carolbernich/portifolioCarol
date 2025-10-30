@@ -12,7 +12,7 @@ const Header = () => {
          
      {/* Ícone do WhatsApp */}
       <a
-        href="https://wa.me/5551993399595"
+        href={process.env.PUBLIC_URL +"https://wa.me/5551993399595"}
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-icon"
