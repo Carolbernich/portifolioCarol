@@ -17,7 +17,7 @@ const Header = () => {
         rel="noopener noreferrer"
         className="whatsapp-icon"
       >
-        <img src="/WhatsApp.svg.webp" alt="WhatsApp" />
+        <img src={process.env.PUBLIC_URL +"/whatsapp.svg.webp"} alt="WhatsApp" />
       </a>
    
         </ul>

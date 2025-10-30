@@ -14,7 +14,7 @@ const Hero = () => {
         <p>Desenvolvedora Unity e Front-end focada em experiências digitais interativas.</p>
         <div className="hero-buttons">
           <button onClick={() => handleScroll("projects")}>Ver Projetos</button>
-          <a href="/CV Carol portugues 2025.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={process.env.PUBLIC_URL +"/CVCarolportugues2025.pdf"} target="_blank" rel="noopener noreferrer" >
             <button className="secondary">Baixar Currículo</button>
           </a>
         </div>
