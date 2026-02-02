@@ -10,7 +10,7 @@ const Contact = () => (
       <a href="https://www.linkedin.com/in/carolinebernich/" target="_blank" rel="noopener noreferrer">
         💼 LinkedIn
       </a>
-      <a href="https://github.com/carolinebernich" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/carolbernich" target="_blank" rel="noopener noreferrer">
         💻 GitHub
       </a>
     </div>

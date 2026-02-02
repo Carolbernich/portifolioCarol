@@ -1,5 +1,7 @@
 @import "./variables";
 
+/* ------------------ BASE ------------------ */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -44,67 +46,176 @@ button {
     opacity: 0.85;
   }
 }
-#projects{
-  h2{
-    margin-top: -40px;
+
+#projects {
+  h2 {
+    margin-top: -13px;
   }
 }
+
+/* ------------------ PROJECT LIST ------------------ */
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-   a{
-      text-decoration: none;
-      color: inherit;
-      
-    }
 
-  .project-card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 320px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: 0.3s;
-    height: 80%;
-    display: flex;
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+  }
+}
+
+/* ------------------ PROJECT CARD ------------------ */
+
+.project-card {
+  width: 320px;
+  height: 380px;       
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  user-select: none;
+  transition: 0.3s;
+  cursor: default;
 
+  &:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+  }
 
-     #biocode{
-      background: rgb(12, 86, 170);
-    height: 140px; /* igual às outras imagens */
-    object-fit: contain;    }
-    
-
-    &:hover {
-      transform: translateY(-4px);
-    }
-
-    img {
-      width: 100%;
-    height: 160px; /* padroniza as imagens */
-    object-fit: cover; /* corta proporcionalmente */
+  img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 15px;
-    }
-     
+  }
 
-    h3 {
-        color: $primary-color;
+  h3 {
+    color: $primary-color;
     font-weight: 600;
     font-size: 1.1rem;
     margin: 10px 0;
-    min-height: 3rem; /* deixa todos os títulos alinhados */
+    min-height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+  }
+
+  p {
+    min-height: 70px;
   }
 }
+
+/* ------------------ BIOCODE CUSTOM CARD ------------------ */
+/* ✅ Fora do bloco .project-card — agora funciona */
+
+
+
+.project-card.biocode-bg img {
+  background: #0C56AA;  /* azul */
+  padding: 10px;
+  border-radius: 8px;
+  object-fit: contain;
+  width: 90%;
+  height: 35%;
+}
+
+/* ------------------ MODAL ------------------ */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: white;
+  width: 90%;
+  max-width: 450px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 25px;
+  border-radius: 16px;
+  position: relative;
+  animation: fadeIn 0.25s ease;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  scrollbar-width: auto;
+  scrollbar-color: #bbb transparent;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 9px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.modal-main-img {
+  width: 100%;
+  max-height: 220px;
+  border-radius: 12px;
+  margin: 15px 0;
+  object-fit: cover;
+  background: #0C56AA;  /* azul */
+}
+
+.modal-link {
+  display: inline-block;
+  margin-top: 15px;
+  background: $primary-color;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.extra-images {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  img {
+    width: 48%;
+    max-height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ------------------ SKILLS ------------------ */
 
 .skills {
   display: flex;
@@ -121,6 +232,8 @@ button {
   }
 }
 
+/* ------------------ CONTACT LINKS ------------------ */
+
 .contact-links a {
   display: block;
   margin: 8px 0;
@@ -132,8 +245,9 @@ button {
     text-decoration: wavy;
   }
 }
+
 .divisor {
-  border-bottom: 2px solid #00aeff;  // linha azul
+  border-bottom: 2px solid #00aeff;
   width: 60%;
-  margin: 40px auto;                 // centralizada
+  margin: 40px auto;
 }
