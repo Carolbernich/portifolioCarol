@@ -12,12 +12,12 @@ const Header = () => {
          
      {/* Ícone do WhatsApp */}
       <a
-        href={process.env.PUBLIC_URL +"https://wa.me/5551993399595"}
+        href="https://wa.me/5551993399595"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-icon"
       >
-        <img src={process.env.PUBLIC_URL +"/whatsapp.svg.webp"} alt="WhatsApp" />
+        <img src={process.env.PUBLIC_URL + "/whatsapp.png"} alt="WhatsApp" />
       </a>
    
         </ul>

@@ -9,7 +9,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Museu de Anatomia (TCC)",
-      img: process.env.PUBLIC_URL + "/museutcc.png",
+      img: process.env.PUBLIC_URL + "/museuTcc.png",
       resumo: "Aplicação de Realidade Aumentada para ensino de Anatomia Humana, com modelos 3D interativos.",
       detalhes: "Desenvolvimento de um aplicativo 3D interativo usando AR, com modelos escaneados e interação por toque. Fiquei responsável pelo desenvolvimento, modelagem, testes e usabilidade.",
       equipe: "Projeto individual + apoio dos professores do laboratório de anatomia.",

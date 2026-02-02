@@ -7,7 +7,7 @@ const Contact = () => (
     <p>Entre em contato para colaborações ou oportunidades profissionais:</p>
     <div className="contact-links">
       <a href="mailto:carolinebernich@gmail.com">📧 carolinebernich@gmail.com</a>
-      <a href="https://www.linkedin.com/in/carolbernich/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/carolinebernich/" target="_blank" rel="noopener noreferrer">
         💼 LinkedIn
       </a>
       <a href="https://github.com/carolbernich" target="_blank" rel="noopener noreferrer">
